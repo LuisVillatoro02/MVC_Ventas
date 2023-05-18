@@ -125,7 +125,7 @@ DELIMITER ;
 
 CREATE TABLE `cliente` (
   `idcliente` int(11) NOT NULL,
-  `dni` int(8) NOT NULL,
+  `dpi` int(8) NOT NULL,
   `nombre` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `telefono` int(15) NOT NULL,
   `direccion` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
@@ -136,8 +136,8 @@ CREATE TABLE `cliente` (
 -- Volcado de datos para la tabla `cliente`
 --
 
-INSERT INTO `cliente` (`idcliente`, `dni`, `nombre`, `telefono`, `direccion`, `usuario_id`) VALUES
-(1, 123545, 'Pubico en general', 925491523, 'Lima', 1);
+INSERT INTO `cliente` (`idcliente`, `dpi`, `nombre`, `telefono`, `direccion`, `usuario_id`) VALUES
+(1, 123545, 'Pubico en general', 925491523, 'Barrios', 1);
 
 -- --------------------------------------------------------
 
@@ -147,7 +147,7 @@ INSERT INTO `cliente` (`idcliente`, `dni`, `nombre`, `telefono`, `direccion`, `u
 
 CREATE TABLE `configuracion` (
   `id` int(11) NOT NULL,
-  `dni` int(11) NOT NULL,
+  `dpi` int(11) NOT NULL,
   `nombre` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `razon_social` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `telefono` int(11) NOT NULL,
@@ -160,8 +160,8 @@ CREATE TABLE `configuracion` (
 -- Volcado de datos para la tabla `configuracion`
 --
 
-INSERT INTO `configuracion` (`id`, `dni`, `nombre`, `razon_social`, `telefono`, `email`, `direccion`, `igv`) VALUES
-(1, 2580, 'Vida Informático', 'Vida Informático', 925491523, 'naju@vidainformatico.com', 'Lima - Perú', '1.18');
+INSERT INTO `configuracion` (`id`, `dpi`, `nombre`, `razon_social`, `telefono`, `email`, `direccion`, `igv`) VALUES
+(1, 2580, 'Vida Informático', 'Vida Informático', 925491523, 'naju@vidainformatico.com', 'Barrios - Perú', '1.18');
 
 -- --------------------------------------------------------
 
@@ -266,8 +266,8 @@ CREATE TABLE `proveedor` (
 --
 
 INSERT INTO `proveedor` (`codproveedor`, `proveedor`, `contacto`, `telefono`, `direccion`, `usuario_id`) VALUES
-(1, 'Open Services', '965432143', 9645132, 'Lima', 2),
-(3, 'Lineo', '25804', 9865412, 'Lima', 2);
+(1, 'Open Services', '965432143', 9645132, 'Barrios', 2),
+(3, 'Lineo', '25804', 9865412, 'Barrios', 2);
 
 -- --------------------------------------------------------
 
