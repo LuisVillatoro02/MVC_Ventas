@@ -114,15 +114,17 @@ if ($_POST['action'] == 'addProductoDetalle') {
     $tl_sniva = round($sub_total - $impuesto, 2);
     $total = round($tl_sniva + $impuesto, 2);
     $detalleTotales ='<tr>
-        <td colspan="5" class="textright">Sub_Total S/.</td>
+        <td colspan="5" class="textright">IVA ('.$iva.'%)</td>
         <td class="textright">'.$impuesto.'</td>
+        
     </tr>
     <tr>
-        <td colspan="5" class="textright">Igv ('.$iva.'%)</td>
-        <td class="textright">'. $tl_sniva.'</td>
+    <td colspan="5" class="textright">Sub_Total Q.</td>
+    <td class="textright">'. $tl_sniva.'</td>
+    
     </tr>
     <tr>
-        <td colspan="5" class="textright">Total S/.</td>
+        <td colspan="5" class="textright">Total Q.</td>
         <td class="textright">'.$total.'</td>
     </tr>';
     $arrayData['detalle'] = $detalleTabla;
@@ -186,17 +188,19 @@ if ($_POST['action'] == 'searchForDetalle') {
     $total = round($tl_sniva + $impuesto, 2);
 
     $detalleTotales = '<tr>
-        <td colspan="5" class="textright">Sub_Total S/.</td>
-        <td class="textright">'.$impuesto.'</td>
-    </tr>
-    <tr>
-        <td colspan="5" class="textright">Igv ('.$iva.')</td>
-        <td class="textright">'. $tl_sniva.'</td>
-    </tr>
-    <tr>
-        <td colspan="5" class="textright">Total S/.</td>
-        <td class="textright">'.$total.'</td>
-    </tr>';
+    <td colspan="5" class="textright">IVA ('.$iva.'%)</td>
+    <td class="textright">'.$impuesto.'</td>
+    
+</tr>
+<tr>
+<td colspan="5" class="textright">Sub_Total Q.</td>
+<td class="textright">'. $tl_sniva.'</td>
+
+</tr>
+<tr>
+    <td colspan="5" class="textright">Total Q.</td>
+    <td class="textright">'.$total.'</td>
+</tr>';
 
     $arrayData['detalle'] = $detalleTabla;
     $arrayData['totales'] = $detalleTotales;
@@ -260,17 +264,19 @@ if ($_POST['action'] == 'delProductoDetalle') {
     $total = round($tl_sniva + $impuesto, 2);
 
     $detalleTotales = '<tr>
-        <td colspan="5" class="textright">Sub_Total S/.</td>
-        <td class="textright">'.$impuesto.'</td>
-    </tr>
-    <tr>
-        <td colspan="5" class="textright">Igv ('.$iva.')</td>
-        <td class="textright">'. $tl_sniva.'</td>
-    </tr>
-    <tr>
-        <td colspan="5" class="textright">Total S/.</td>
-        <td class="textright">'.$total.'</td>
-    </tr>';
+    <td colspan="5" class="textright">IVA ('.$iva.'%)</td>
+    <td class="textright">'.$impuesto.'</td>
+    
+</tr>
+<tr>
+<td colspan="5" class="textright">Sub_Total Q.</td>
+<td class="textright">'. $tl_sniva.'</td>
+
+</tr>
+<tr>
+    <td colspan="5" class="textright">Total Q.</td>
+    <td class="textright">'.$total.'</td>
+</tr>';
 
     $arrayData['detalle'] = $detalleTabla;
     $arrayData['totales'] = $detalleTotales;

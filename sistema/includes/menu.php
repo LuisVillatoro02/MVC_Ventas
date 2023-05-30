@@ -1,12 +1,12 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
 
 	<!-- Sidebar - Brand -->
 	<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
 		<div class="sidebar-brand-icon rotate-n-15">
-			<img src="img/torre.jpg" class="img-thumbnail">
+			<img src="img/torres.jpg" class="img-thumbnail">
 		</div>
-		<div class="sidebar-brand-text mx-3">Supermercado la Torre</div>
+		<div class="sidebar-brand-text mx-3">LAFINTEL S.A.</div>
 	</a>
 
 	<!-- Divider -->
@@ -29,7 +29,7 @@
 		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<a class="collapse-item" href="nueva_venta.php">Nueva venta</a>
-				<a class="collapse-item" href="ventas.php">Ventas</a>
+				<!--<a class="collapse-item" href="ventas.php">Ventas</a>-->
 			</div>
 		</div>
 	</li>
