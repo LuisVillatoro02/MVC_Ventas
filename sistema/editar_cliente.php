@@ -65,7 +65,7 @@ if ($result_sql == 0) {
                 <?php echo isset($alert) ? $alert : ''; ?>
                 <input type="hidden" name="id" value="<?php echo $idcliente; ?>">
                 <div class="form-group">
-                  <label for="dni">Dni</label>
+                  <label for="dni">NIT</label>
                   <input type="number" placeholder="Ingrese dni" name="dni" id="dni" class="form-control" value="<?php echo $dni; ?>">
                 </div>
                 <div class="form-group">

@@ -13,7 +13,7 @@
 
 		<!-- Earnings (Monthly) Card Example -->
 		<a class="col-xl-3 col-md-6 mb-4" href="lista_usuarios.php">
-			<div class="card border-left-success shadow h-100 py-2">
+			<div class="card border-left-warning shadow h-100 py-2">
 				<div class="card-body">
 					<div class="row no-gutters align-items-center">
 						<div class="col mr-2">
@@ -30,7 +30,7 @@
 
 		<!-- Earnings (Monthly) Card Example -->
 		<a class="col-xl-3 col-md-6 mb-4" href="lista_cliente.php">
-			<div class="card border-left-success shadow h-100 py-2">
+			<div class="card border-left-warning shadow h-100 py-2">
 				<div class="card-body">
 					<div class="row no-gutters align-items-center">
 						<div class="col mr-2">
@@ -58,7 +58,7 @@
 								</div>
 								<div class="col">
 									<div class="progress progress-sm mr-2">
-										<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 							</div>
@@ -95,7 +95,7 @@
 	<div class="row">
 		<div class="col-lg-6">
 			<div class="card">
-				<div class="card-header bg-success text-white">
+				<div class="card-header bg-warning text-white">
 					Información Personal
 				</div>
 				<div class="card-body">
@@ -112,7 +112,7 @@
 						<label>Usuario: <strong><?php echo $_SESSION['user']; ?></strong></label>
 					</div>
 					<ul class="list-group">
-						<li class="list-group-item active bg-success">Cambiar Contraseña</li>
+						<li class="list-group-item active bg-warning">Cambiar Contraseña</li>
 						<form action="" method=" post" name="frmChangePass" id="frmChangePass" class="p-3">
 							<div class="form-group">
 								<label>Contraseña Actual</label>
@@ -129,7 +129,7 @@
 							<div class="alertChangePass" style="display:none;">
 							</div>
 							<div>
-								<button type="submit" class="btn btn-success btnChangePass">Cambiar Contraseña</button>
+								<button type="submit" class="btn btn-warning btnChangePass">Cambiar Contraseña</button>
 							</div>
 						</form>
 					</ul>
@@ -139,13 +139,13 @@
 		<?php if ($_SESSION['rol'] == 1) { ?>
 			<div class="col-lg-6">
 				<div class="card">
-					<div class="card-header bg-success text-white">
+					<div class="card-header bg-warning text-white">
 						Datos de la Empresa
 					</div>
 					<div class="card-body">
 						<form action="empresa.php" method="post" id="frmEmpresa" class="p-3">
 							<div class="form-group">
-								<label>Ruc:</label>
+								<label>RTU:</label>
 								<input type="number" name="txtDni" value="<?php echo $dni; ?>" id="txtDni" placeholder="Dni de la Empresa" required class="form-control">
 							</div>
 							<div class="form-group">
@@ -169,12 +169,12 @@
 								<input type="text" name="txtDirEmpresa" class="form-control" value="<?php echo $dirEmpresa; ?>" id="txtDirEmpresa" placeholder="Dirreción de la Empresa" required>
 							</div>
 							<div class="form-group">
-								<label>IGV (%):</label>
+								<label>IVA (%):</label>
 								<input type="text" name="txtIgv" class="form-control" value="<?php echo $igv; ?>" id="txtIgv" placeholder="IGV de la Empresa" required>
 							</div>
 							<?php echo isset($alert) ? $alert : ''; ?>
 							<div>
-								<button type="submit" class="btn btn-success btnChangePass"><i class="fas fa-save"></i> Guardar Datos</button>
+								<button type="submit" class="btn btn-warning btnChangePass"><i class="fas fa-save"></i> Guardar Datos</button>
 							</div>
 
 						</form>

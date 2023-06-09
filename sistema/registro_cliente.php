@@ -54,8 +54,8 @@ if (!empty($_POST)) {
             <form action="" method="post" autocomplete="off">
                 <?php echo isset($alert) ? $alert : ''; ?>
                 <div class="form-group">
-                    <label for="dni">DPI</label>
-                    <input type="number" placeholder="Ingrese DPI" name="dni" id="dni" class="form-control">
+                    <label for="dni">NIT</label>
+                    <input type="number" placeholder="Ingrese NIT" name="dni" id="dni" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
